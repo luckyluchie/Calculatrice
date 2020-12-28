@@ -88,8 +88,13 @@ keys.addEventListener('click', function(e){
       calculator.dataset.modValue = secondValue
       calculator.dataset.previousKeyType = 'calculate'
     } 
-  }
-    
-})    
+  } 
+}) 
+
+const btnAnimation = document.querySelector('.btn-animation')
+
+btnAnimation.addEventListener('click', function (){
+  calculator.classList.toggle('rotate-animation')
+})
 
  

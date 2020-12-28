@@ -3,6 +3,28 @@
   src: url("fonts/Calculator.ttf");
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,7 +59,7 @@ p {
   text-transform: uppercase;
   color: #fff;
   font-family: 'Monoton', cursive;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -108,5 +130,25 @@ p {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
   grid-row: 2 / span 4;
+}
+
+.text-animation {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.btn-animation {
+  font-family: 'Exo 2', sans-serif;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  padding: 6px;
+  font-size: 0.9rem;
+}
+
+.rotate-animation {
+  -webkit-animation: rotate 1s both;
+          animation: rotate 1s both;
 }
 /*# sourceMappingURL=style.css.map */
