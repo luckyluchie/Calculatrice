@@ -91,10 +91,13 @@ keys.addEventListener('click', function(e){
   } 
 }) 
 
+// button animation
 const btnAnimation = document.querySelector('.btn-animation')
+const animation = document.querySelectorAll('.animation')
 
 btnAnimation.addEventListener('click', function (){
   calculator.classList.toggle('rotate-animation')
+  btnAnimation.textContent = "Retourner"
+
 })
 
- 
