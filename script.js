@@ -98,6 +98,5 @@ const animation = document.querySelectorAll('.animation')
 btnAnimation.addEventListener('click', function (){
   calculator.classList.toggle('rotate-animation')
   btnAnimation.textContent = "Retourner"
-
 })
 
